@@ -1,1 +1,1 @@
-# LASMpsyCAS.github.io
+# scnp.github.io
