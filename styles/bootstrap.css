@@ -556,6 +556,18 @@ pre code {
   overflow-y: scroll;
 }
 
+.main-content {
+  max-width: 60%; /* 设置最大宽度为60% */
+  margin: 0 auto; /* 上下边距为0，左右自动调整，实现居中 */
+  /* 根据需要添加其他样式，比如padding或background */
+}
+
+.custom-container {
+  width: 80%;
+  max-width: 900px; 
+  margin: 0 auto;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -6356,7 +6368,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #3d3f4c !important;
+  background-color: #edf0f7 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
