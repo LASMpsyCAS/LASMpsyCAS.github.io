@@ -1,5 +1,10 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background: url("../images/da-img-6.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*Header Style*/

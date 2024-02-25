@@ -6368,6 +6368,8 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
+  background: url("../images/da-img-6.jpg") no-repeat center center;
+  background-size: cover !important;
   background-color: #edf0f7 !important;
 }
 
