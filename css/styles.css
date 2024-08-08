@@ -297,6 +297,14 @@ a {
     font-size: 1.1em;
     line-height: 1.6em;
 }
+.darkBg p {
+    color: #fffffe; /* 正白色 */
+}
+
+/* 对于浅色背景 */
+.whiteBg p {
+    color: #010101; /* 正黑色 */
+}
 
 .darkBg {
     background: rgb(44, 44, 44);
