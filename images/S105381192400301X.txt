@@ -1,0 +1,11 @@
+Guowei Wu, Zaixu Cui, Xiuyi Wang, Yi Du,
+Unveiling the core functional networks of cognition: An ontology-guided machine learning approach,
+NeuroImage,
+Volume 298,
+2024,
+120804,
+ISSN 1053-8119,
+https://doi.org/10.1016/j.neuroimage.2024.120804.
+(https://www.sciencedirect.com/science/article/pii/S105381192400301X)
+Abstract: Deciphering the functional architecture that underpins diverse cognitive functions is fundamental quest in neuroscience. In this study, we employed an innovative machine learning framework that integrated cognitive ontology with functional connectivity analysis to identify brain networks essential for cognition. We identified a core assembly of functional connectomes, primarily located within the association cortex, which showed superior predictive performance compared to two conventional methods widely employed in previous research across various cognitive domains. Our approach achieved a mean prediction accuracy of 0.13 across 16 cognitive tasks, including working memory, reading comprehension, and sustained attention, outperforming the traditional methods' accuracy of 0.08. In contrast, our method showed limited predictive power for sensory, motor, and emotional functions, with a mean prediction accuracy of 0.03 across 9 relevant tasks, slightly lower than the traditional methods' accuracy of 0.04. These cognitive connectomes were further characterized by distinctive patterns of resting-state functional connectivity, structural connectivity via white matter tracts, and gene expression, highlighting their neurogenetic underpinnings. Our findings reveal a domain-general functional network fingerprint that pivotal to cognition, offering a novel computational approach to explore the neural foundations of cognitive abilities.
+Keywords: Cognitive ontology; Functional networks; Machine learning
