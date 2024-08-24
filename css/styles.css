@@ -510,8 +510,8 @@ a {
     }
     
     .team-member-graduate .member-img {
-        width: 200px;  /* 固定宽度,可以根据需要调整 */
-        height: 200px; /* 固定高度,可以根据需要调整 */
+        width:  300px;  /* 固定宽度,可以根据需要调整 */
+        height: 300px; /* 固定高度,可以根据需要调整 */
         margin: 0 auto;
         overflow: hidden;
         border: 2px solid #80B421;

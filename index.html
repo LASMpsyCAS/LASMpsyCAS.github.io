@@ -511,7 +511,7 @@
                         <!-- Image Hover Block -->
                         <div class="member-img">
                             <!-- Image  -->
-                            <img src="images/liangbaisheng_new.jpg" alt="Graduate 5">
+                            <img src="images/liangbaisheng_new1.jpg" alt="Graduate 5">
                         </div>
                         <!-- Member Details -->
                         <h3>Liang Baishen (梁柏燊)</h3>
@@ -556,6 +556,17 @@
     <!--/.container-->
 </section>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('#filter a');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                tabs.forEach(t => t.classList.remove('current'));
+                this.classList.add('current');
+            });
+        });
+    });
+</script>
 
 <section id="publications" class="page-section section appear clearfix">
     <div class="container">
