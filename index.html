@@ -9,9 +9,9 @@
     <!--[if lt IE 9]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>LASM Lab - Corporate Responsive Template</title>
-    <meta name="description" content="">
-    <meta name="author" content="WebThemez">
+    <title>LASM Lab - Home</title>
+    <meta name="description" content="LASM Lab website">
+    <meta name="author" content="LASM Lab">
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Font Awesome -->
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
     <style>
     .justified-text {
@@ -44,39 +43,26 @@
     }
     </style>
 </head>
-
-<body>
-<header class="header">
-    <div class="container">
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand scroll-top logo"><b>LASM</b> Lab</a>
-            </div>
-            <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav" id="mainNav">
-                    <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                    <li><a href="#research" class="scroll-link">Research</a></li>
-					<li><a href="#pi" class="scroll-link">PI</a></li>
-                    <li><a href="#team" class="scroll-link">Team</a></li>
-                    <li><a href="#publications" class="scroll-link">Publications</a></li>
-                    <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
-                </ul>
-            </div>
-            <!--/.navbar-collapse-->
-        </nav>
-        <!--/.navbar-->
-    </div>
-    <!--/.container-->
-</header>
-<!--/.header-->
-<div id="#top"></div>
+<body class="multi-page-site">
+<div id="top"></div>
+<button class="sidebar-toggle" type="button" aria-label="Toggle navigation" aria-expanded="true">
+    <i class="fa fa-bars"></i>
+</button>
+<aside class="side-nav" aria-label="Main navigation">
+    <a href="index.html" class="side-logo"><b>LASM</b><span> Lab</span></a>
+    <nav>
+        <ul>
+                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="research.html"><i class="fa fa-flask"></i><span>Research</span></a></li>
+                <li><a href="pi.html"><i class="fa fa-user"></i><span>PI</span></a></li>
+                <li><a href="team.html"><i class="fa fa-users"></i><span>Team</span></a></li>
+                <li><a href="publications.html"><i class="fa fa-book"></i><span>Publications</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i><span>Contact Us</span></a></li>
+        </ul>
+    </nav>
+</aside>
+<div class="sidebar-scrim" aria-hidden="true"></div>
+<main class="site-main">
 <section id="home">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -154,519 +140,111 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
 </section>
-
-<style>
-.img-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    background-color: white;
-}
-</style>
-
-
-<section id="research" class="page-section darkBg pDark pdingBtm30">
+<section class="page-section quick-links-section">
     <div class="container">
-        <div class="heading text-center">
-            <!-- Heading -->
-            <h2>Research</h2>
-            <div class="justified-text">
-                <p>Speech and music are two types of auditory signals of great significance to our human beings. Speech is a communication system specializing in the transmission of information, while music is a communication system specializing in the expression of emotion. We employ a combination of psychophysical testing, physiological recording (EEG and MEG), brain imaging (multi-modal MRI) and non-invasive neuromodulation techniques (TMS and tES) to study how human brain understands speech and enjoys music, with particular interest in:</p>
-                <p>1) The neural mechanisms (e.g., multisensory integration, predictive coding) underlying speech perception and comprehension, especially in adverse listening circumstances.</p>
-                <p>2) The life-span development of speech perception and comprehension.</p>
-                <p>3) The neural mechanisms underlying musical structure, emotion and reward processing.</p>
-                <p>4) The musical training experience-related brain plasticity.</p>
-                <p>5) The brain organizational principles governing language functions and more.</p>
-                <p>Our work is supported by multiple agencies including the National Key Research and Development Program of China, the National Natural Science Fund for Outstanding Young Scholars and the Strategic Priority Research Program of Chinese Academy of Sciences.</p>
-            </div>
+        <div class="heading text-center home-section-heading">
+            <h2>Explore LASM Lab</h2>
+            <p>Each module is now a clean subpage. Click any full-width row below to open the corresponding page.</p>
         </div>
-    </div>
-    <!--/.container-->
-</section>
+        <div class="subpage-list">
+            <a class="subpage-row research-row" href="research.html" aria-label="Open Research page">
+                <div class="subpage-visual research-visual" aria-hidden="true">
+                    <div class="research-orbit orbit-one"></div>
+                    <div class="research-orbit orbit-two"></div>
+                    <div class="brain-shape">
+                        <span class="brain-node node-one"></span>
+                        <span class="brain-node node-two"></span>
+                        <span class="brain-node node-three"></span>
+                    </div>
+                    <i class="fa fa-music music-note note-one"></i>
+                    <i class="fa fa-music music-note note-two"></i>
+                    <div class="meg-panel">MEG</div>
+                    <div class="wave-line"><span></span><span></span><span></span><span></span></div>
+                </div>
+                <div class="subpage-copy">
+                    <span class="subpage-label">Research</span>
+                    <h3>Speech, music and brain mechanisms</h3>
+                    <ul>
+                        <li>Studies speech perception, music cognition and multisensory integration.</li>
+                        <li>Combines psychophysics, EEG/MEG, MRI, TMS and tES methods.</li>
+                        <li>Highlights development, plasticity and auditory cognition across the lifespan.</li>
+                    </ul>
+                </div>
+            </a>
 
-<section id="pi" class="page-section whiteBg pDark pdingBtm30">
-    <div class="container">
-        <div class="heading text-center">
-            <!-- Heading -->
-            <h2>Principal Investigator (PI)</h2>
-            <div class="text-center">
-                <img src="images/duyi_latest.jpg" alt="Du Yi" style="width: 200px; height: auto;">
-                <h3><a href="https://psych.cas.cn/sourcedb/cn/expert/201602/t20160215_6369861.html" target="_blank">Du Yi（杜忆）</a></h3>
-                <div class="justified-text" style="max-width: 60%; margin: 0 auto;">
-                    <p>2016-present Research Professor at the Institute of Psychology, Chinese Academy of Sciences. China.</p>
-                    <p>2015-2016 Post-doctoral Fellow at Montreal Neurological Institute, McGill University. Canada.</p>
-                    <p>2012-2015 Post-doctoral Fellow at Rotman Research Institute, University of Toronto. Canada.</p>
-                    <p>2005-2011 Ph.D. in Psychology at Peking University. China.</p>
-                    <p>2000-2005 Bachelor at Peking University Health Science Center. China.</p>
-                    <p>Research Interests: Investigating the brain mechanisms of human auditory speech and music cognition using psychophysical methods, various brain imaging techniques (including fMRI, MEG, EEG), and non-invasive neural modulation techniques (tES, TMS). The research focuses include: auditory processing and multisensory integration, speech perception and comprehension, lifespan development and plasticity of speech cognition, and music cognition.</p>
+            <a class="subpage-row pi-row" href="pi.html" aria-label="Open PI page">
+                <div class="subpage-visual photo-visual" aria-hidden="true">
+                    <img src="images/duyi_latest.jpg" alt="">
                 </div>
-            </div>
-        </div>
-    </div>
-    <!--/.container-->
-</section>
+                <div class="subpage-copy">
+                    <span class="subpage-label">Principal Investigator</span>
+                    <h3>Professor Du Yi（杜忆）</h3>
+                    <ul>
+                        <li>Research Professor at the Institute of Psychology, Chinese Academy of Sciences.</li>
+                        <li>Focuses on auditory speech and music cognition with brain imaging and neuromodulation.</li>
+                        <li>Leads LASM Lab research on perception, comprehension, lifespan development and plasticity.</li>
+                    </ul>
+                </div>
+            </a>
 
+            <a class="subpage-row team-row" href="team.html" aria-label="Open Team page">
+                <div class="subpage-visual team-visual" aria-hidden="true">
+                    <img class="team-bubble bubble-one" src="images/WangXiuyi.PNG" alt="">
+                    <img class="team-bubble bubble-two" src="images/ZhaoWanying.PNG" alt="">
+                    <img class="team-bubble bubble-three" src="images/YouSiqi.PNG" alt="">
+                    <div class="team-center"><i class="fa fa-users"></i><span>LASM</span></div>
+                </div>
+                <div class="subpage-copy">
+                    <span class="subpage-label">Team</span>
+                    <h3>Current members and graduates</h3>
+                    <ul>
+                        <li>Introduces assistant research fellows, postdocs, students and lab members.</li>
+                        <li>Keeps the original circular image presentation and member-card rhythm.</li>
+                        <li>Includes graduate destinations and research-interest summaries.</li>
+                    </ul>
+                </div>
+            </a>
 
-<section id="team" class="page-section darkBg pDark pdingBtm30">
-    <div class="container">
-        <div class="heading text-center">
-            <!-- Heading -->
-            <h2>Our Team</h2>
-            <p>Meet our dedicated team members who work tirelessly to advance our research and contribute to the scientific community.</p>
-        </div>
-        <!-- Team Member's Details -->
-        <div class="team-content">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/WangXiuyi.PNG" alt="Wang Xiuyi">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Wang Xiuyi (王秀祎)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Assistant Research Fellow</span>
-                        <p>Research Interests: I investigate the functional differentiation of subnetworks within multiple demand network and default mode network and how their functional differentiation emerges across the brain.</p>
-                    </div>
+            <a class="subpage-row publications-row" href="publications.html" aria-label="Open Publications page">
+                <div class="subpage-visual publications-visual" aria-hidden="true">
+                    <div class="paper-card paper-one"><i class="fa fa-book"></i><span>PLoS</span></div>
+                    <div class="paper-card paper-two"><i class="fa fa-file-text-o"></i><span>NeuroImage</span></div>
+                    <div class="paper-card paper-three"><i class="fa fa-bar-chart-o"></i><span>Science</span></div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/ZhaoWanying.PNG" alt="Zhao Wanying">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Zhao Wanying (赵婉莹)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Assistant Research Fellow</span>
-                        <p>Research Interests: The Influence of Gestural Actions on Verbal Information and Its Brain Mechanism of Integration; Compensatory Mechanisms of Gestural Actions for Speech Disorders; The Mechanism of Speech Generation and Development under the Theory of Embodied Cognition.</p>
-                    </div>
+                <div class="subpage-copy">
+                    <span class="subpage-label">Publications</span>
+                    <h3>Grouped research outputs</h3>
+                    <ul>
+                        <li>Organizes papers by speech perception, musical processing and brain topography.</li>
+                        <li>Retains the original tabbed publication browsing interaction.</li>
+                        <li>Highlights recent work in PLoS Biology, NeuroImage and related journals.</li>
+                    </ul>
                 </div>
-                
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/YouSiqi.PNG" alt="You Siqi">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>You Siqi (尤思琦)</h3>
-                        <!-- Designation -->
-                        <span class="pos">PostDoc Fellow</span>
-                        <p>Research Interests: Research Interests: My research is dedicated to understanding the therapeutic effects of music and its cognitive neural mechanisms, with a specific focus on how music modulates the multi-system mechanisms of acute stress responses. Utilizing MRI for neuroimaging, physiological multi-channel recording for assessing physiological responses, cortisol analysis for hormonal changes, and music parameter analysis for understanding musical characteristics, I seek to delineate the complex interplay between musical interventions and the body’s stress-regulating systems.</p>
-                    </div>
-                </div>
-            
-            
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/ChenHou.jpg" alt="Chen Hou">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Chen Hou (陈后)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Lab Manager</span>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/JiangXintong_resized_docsmall.com.jpg" alt="Jiang Xintong">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Jiang Xintong (姜欣桐)</h3>
-                        <!-- Designation -->
-                        <span class="pos">PhD Student</span>
-                        <p>Research Interests: My principal research interest is centered around the electrophysiological, neuroimaging, and neurometabolic mechanisms underlying music reward processing. At present, I predominantly employ multi-channel physiology, EEG, fMRI, and fMRS techniques to explore the reward system, autonomic nervous responses, and neurotransmitter metabolic mechanisms that are triggered by the chilling music. Moreover, I also direct my attention to the neural mechanism of music reward prediction error encoded by dopamine. </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/LuBaihan_resized_docsmall.com.jpg" alt="Lu Baihan">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Lyu Baihan (吕柏翰)</h3>
-                        <!-- Designation -->
-                        <span class="pos">PhD Student</span>
-                        <p>Research Interests: My research primarily focuses on the predictive coding mechanisms underlying speech comprehension. I integrate multiple neuroimaging techniques (fMRI and MEG) and state-of-the-art language models, to examine how top-down predictions interact with bottom-up sensory input.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/WuGuowei_resized_docsmall.com.jpg" alt="Wu Guowei">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Wu Guowei (吴国伟)</h3>
-                        <!-- Designation -->
-                        <span class="pos">PhD Student</span>
-                        <p>Research Interests: My research endeavors are centered on uncovering the organizational frameworks and segmentation nuances of language functional brain networks, alongside investigating the intricate process of cross-modal semantic alignment among multimodal objects.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/YangJiawang_resized_docsmall.com.jpg" alt="Yang Jiawang">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Yang Jiawang (杨嘉望)</h3>
-                        <!-- Designation -->
-                        <span class="pos">PhD Student</span>
-                        <p>Research Interests:I primarily investigate audiovisual integration mechanisms using various psychophysical methods (i.e., EEG, MEG) and information theoretical approaches. There is significant heterogeneity in audiovisual integration, influenced by factors such as attention, semantic state, and the type of visual stimuli (e.g., gestures or lip movements). My aim is to elucidate these complex integration processes and develop a novel brain-inspired model that simulates audiovisual integration.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/HuaShan_resized_docsmall.com.jpg" alt="Hua Shan">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Hua Shan (华山)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Master Student</span>
-                        <p>Research Interests: my research interest mainly focus on using MEG/EEG, eyemovement recoding to explore the musical rhythmic perception, including hierarchical rhythmic structure in music, sensorimotor synchronization during listening and pleasurable feelings induced by rhythm. </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/ZhuJinyao_resized_docsmall.com.jpg" alt="Zhu Jinyao">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Zhu Jinyao (朱瑾瑶)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Master Student</span>
-                        <p> Educational Background: 
-                            September 2023 - Present
-                            Institute of Psychology, Chinese Academy of Sciences / Sino-Danish College
-                            Major: Cognitive Neuroscience
-                            September 2019 - July 2023
-                            Shaanxi Normal University
-                            Major: Psychology
-                            Research Focus:
-                            Cognitive Neural Mechanisms of Conscious and Unconscious Visual Temporal Cues in Enhancing Speech Recognition in Noise</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                    <!-- Team Member -->
-                    <div class="team-member pDark">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img class="img-responsive" src="images/LiZhouyi_resized_docsmall.com.jpg" alt="Li Zhouyi">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Li Zhouyi (李周一)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Master Student</span>
-                        <p> My research interest falls on gesture-speech integration. My favorite pop band is Knights. I'm really looking forward to exploring the wonders in this field with all of you together.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <!--/.container-->
-</section>
+            </a>
 
-<section id="graduates" class="page-section darklg pDark pdingBtm30">
-    <div class="container">
-        <div class="heading text-center">
-            <!-- Heading -->
-            <h2>Our Graduates</h2>
-            <p>Meet our accomplished graduates who have contributed to our research and moved on to new endeavors.</p>
-        </div>
-        <!-- Graduates' Details -->
-        <div class="team-content">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/graduate1.jpg" alt="Graduate 1">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Xinglidongsheng (邢立冬生)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Master Student</span>
-                        <p class="descrition">Brief description or current position</p>
+            <a class="subpage-row contact-row" href="contact.html" aria-label="Open Contact Us page">
+                <div class="subpage-visual contact-visual" aria-hidden="true">
+                    <div class="map-card">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Beijing</span>
                     </div>
+                    <div class="mail-card"><i class="fa fa-envelope"></i></div>
+                    <div class="route-line"></div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/lixiang.jpg" alt="Graduate 2">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Li Xiang (李想)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Master Student</span>
-                        <p class="descrition">Higher Education Press</p>
-                    </div>
+                <div class="subpage-copy">
+                    <span class="subpage-label">Contact Us</span>
+                    <h3>Programs, visits and collaboration</h3>
+                    <ul>
+                        <li>Provides lab address, email and application contact details.</li>
+                        <li>Includes a contact form layout for PhD and postdoc inquiries.</li>
+                        <li>Links to the location map for the Institute of Psychology, CAS.</li>
+                    </ul>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/zhouxiaoqian.jpg" alt="Graduate 3">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Zhou Xiaoqian (周小倩)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Master Student</span>
-                        <p class="descrition">Yali High School</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/zhanglei.jpg" alt="Graduate 4">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Zhang Lei (张磊)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Phd Student</span>
-                        <p class="descrition">Postdoctoral Fellow at the University of Toronto</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/liangbaisheng_new1.jpg" alt="Graduate 5">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Liang Baishen (梁柏燊)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Phd Student</span>
-                        <p class="descrition">Postdoctoral Associate at Duke University</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/lixiaonan.jpg" alt="Graduate 6">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Li Xiaonan (李晓楠)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Phd Student</span>
-                        <p class="descrition"> </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <!-- Graduate -->
-                    <div class="team-member-graduate">
-                        <!-- Image Hover Block -->
-                        <div class="member-img">
-                            <!-- Image  -->
-                            <img src="images/wuyiyang_new.jpg" alt="Graduate 6">
-                        </div>
-                        <!-- Member Details -->
-                        <h3>Wu Yiyang (吴伊扬)</h3>
-                        <!-- Designation -->
-                        <span class="pos">Phd Student</span>
-                        <p class="descrition"> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/.container-->
-</section>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const tabs = document.querySelectorAll('#filter a');
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function () {
-                tabs.forEach(t => t.classList.remove('current'));
-                this.classList.add('current');
-            });
-        });
-    });
-</script>
-
-<section id="publications" class="page-section section appear clearfix">
-    <div class="container">
-        <div class="heading text-center">
-            <!-- Heading -->
-            <h2>Publications</h2>
-        </div>
-        <div id="filter" class="col-md-12 text-center">
-			<ul style="display: flex; justify-content: center; gap: 20px; list-style: none; padding: 0;">
-				<li><a href="#speech-perception" class="current btn-theme btn-small" data-toggle="tab">Speech perception</a></li>
-				<li><a href="#musical-processing" class="btn-theme btn-small" data-toggle="tab">Musical processing</a></li>
-				<li><a href="#brain-topography" class="btn-theme btn-small" data-toggle="tab">Brain Topography</a></li>
-				<li><a href="#auditory-processing" class="btn-theme btn-small" data-toggle="tab">Auditory processing in animal models</a></li>
-			</ul>
-		</div>
-        <div class="tab-content">
-            <div class="tab-pane fade in active" id="speech-perception">
-                <h3>Speech perception and language comprehension:</h3>
-                <p>[1]. Liang, Baishen, Li, Yanchang, Zhao, Wanying, & Du, Yi. (2023). Bilateral human laryngeal motor cortex in perceptual decision of lexical tone and voicing of consonant. NATURE COMMUNICATIONS, 14(1), 15.</p>
-                <p>[2]. Zhang, Lei, Wang, Xiuyi, Alain, Claude, & Du, Yi. (2023). Successful aging of musicians: Preservation of sensorimotor regions aids audiovisual speech-in-noise perception. SCIENCE ADVANCES, 9(17), 11.</p>
-                <p>[3]. Lei Zhang, & Yi Du. (2022). Lip movements enhance speech representations and effective connectivity in auditory dorsal stream. Neuroimage, 257, 119311.</p>
-                <p>[4]. Zhao, W.Y., Li, Y.C., Du, Y.* (2021). TMS reveals dynamic interaction between inferior frontal gyrus and posterior middle temporal gyrus in gesture-speech semantic integration. Journal of Neuroscience, 41,10356-10364.</p>
-                <p>[5]. Liang, B., Du, Y.* (2018). The functional neuroanatomy of lexical tone perception: An activation likelihood estimation meta-analysis. Frontiers in Neuroscience, 12, 495.</p>
-                <p>[6]. Alain, C.*, Du, Y., Bernstein, L., Barten, T., Banai, K. (2018). Listening under difficult conditions: An activation likelihood estimation meta-analysis. Human Brain Mapping, 39, 2695-2709.</p>
-                <p>[7]. Du, Y.*, Buchsbaum, B., Grady, C., Alain, C.* (2016). Increased activity in frontal motor cortex compensates impaired speech perception in older adults. Nature Communications, 7, 12241.</p>
-                <p>[8]. Du, Y., He, Y., Arnott, S.R., Ross, B., Wu, X.H., Li, L.*, Alain, C.* (2015). Rapid tuning of auditory “what” and “where” pathways by training. Cerebral Cortex, 25, 496-506.</p>
-                <p>[9]. Du, Y., Buchsbaum, B., Grady, C., Alain, C.* (2014). Noise differentially impacts phoneme representations in the auditory and speech motor systems. Proceedings of the National Academy of Sciences of the United States of America, 111, 7126-7131.</p>
-                <p>[10]. Du, Y., He, Y., Ross, B., Bardouille, T., Wu, X.H., Li, L.*, Alain, C.* (2011). Human auditory cortex activity shows additive effects of spectral and spatial cues during speech segregation. Cerebral Cortex, 21, 698-707.</p>
-            </div>
-            <div class="tab-pane fade" id="musical-processing">
-                <h3>Musical processing and training plasticity:</h3>
-		        <p>[1]. Lyu, B.H., Li, Y.C., Albouy, P., Morillon, B., Zatorre, R.J.*, & Du, Y.* (2025). Spectrotemporal modulation sensitivity in speech and melody processing among mandarin speakers. <i>Ear and Hearing</i>. https://doi.org/10.1097/AUD.0000000000001751</p>
-                <p>[2]. Wu, Y.Y., Teng, X.B.*, Du. Y.* (2025). Eye blinks synchronize with musical beats during music listening. <i>PLoS Biology</i>, 23(11), e3003456. https://doi.org/10.1371/journal.pbio.3003456</p>
-                <p>[3]. Zhang, L., Ross, B., Du, Y.*, Alain, C.* (2025). Long-term musical training can protect against age-related upregulation of neural activity in speech-in-noise perception. <i>PLoS Biology</i>, 23(7), e3003247. https://doi.org/10.1371/journal.pbio.3003247</p>
-                <p>[4]. Jin, X.H.#, Xing, Y.#, Lyu, B.H., Ding, J.H., Wang, X.Y., Tang, Y.*, Du, Y.* (2025). Cognitive training reorganizes lateralization of fronto-parietal network in vascular cognitive impairment. <i>Brain Communications</i>, fcaf394. https://doi.org/10.1093/braincomms/fcaf394</p>
-                <p>[5]. Zhang, L., Du, Y.*, Zatorre, R.J.* (2025). Visual congruency of performers’ movements enhances vocal music reward through Mu entrainment. <i>Social Cognitive and Affective Neuroscience</i>, nsaf089. https://doi.org/10.1093/scan/nsaf089</p>
-                <p>[6]. You, S.Q.#, Jiang, X.T.#, Du, Y.* (2025). Beyond valence: A predictive coding framework for major-minor mode perception and its therapeutic implications. <i>Physics of Life Reviews</i>, 53, 131-133. https://doi.org/10.1016/j.plrev.2025.03.002</p>
-                <p>[7]. Jin, X.H., Zhang, L., Wu, G.W., Wang, X.Y., Du, Y*. (2024). Compensation or preservation? Different roles of functional lateralization in speech perception of older non-musicians and musicians. <i>Neuroscience Bulletin</i>. https://doi.org/10.1007/s12264-024-01234-x</p>
-                <p>[8]. Zhang, X.Y., Li, J.J.*, Du, Y. (2022). Melodic intonation therapy on non-fluent aphasia after stroke: A systematic review and analysis on clinical trials. <i>Frontiers in Neuroscience</i>, 15, 24.</p>
-                <p>[9]. Du, Y.*, Zatorre, R.J. (2017). Musical training sharpens and bonds ears and tongue to hear speech better. <i>Proceedings of the National Academy of Sciences of the United States of America</i>, 114, 13579-13584.</p>
-                <p>[10]. Zhang, L., Fu, X.Y., Luo, D., Xing, L.S.D., Du, Y.* (2021). Musical experience offsets age-related decline in understanding speech-in-noise: Type of training does not matter, working memory is the key. <i>Ear and Hearing</i>, 42, 258-270.</p>
-                <p>[11]. Li, X., Zatorre, R.J., Du, Y.* (2021). The Microstructural plasticity of the arcuate fasciculus undergirds improved speech in noise perception in musicians. <i>Cerebral Cortex</i>, 31, 3975-3985.</p>
-            </div>
-            <div class="tab-pane fade" id="brain-topography">
-                <h3>Brain Topography and neural plasticity:</h3>
-                <p>[1]. Wu, G., Cui, Z., Wang, X.*, & Du, Y.* (2024). Unveiling the core functional networks of cognition: An ontology-guided machine learning approach. NeuroImage, 298, 120804. https://doi.org/https://doi.org/10.1016/j.neuroimage.2024.120804</p> 
-                <p>[2]. Wang, X.*, Krieger-Redwood, K., Cui, Y.  Yi Du* & Elizabeth Jefferies*. (2024). Macroscale brain states support the control of semantic cognition. Commun Biol 7, 926. https://doi.org/10.1038/s42003-024-06630-7</p>        
-		        <p>[3]. Wang, X.*, Krieger-Redwood, K., Lyu, B., Lowndes, R., Wu, G., Souter, N. E., ... & Jefferies, E*. (2024). The Brain’s Topographical Organization Shapes Dynamic Interaction Patterns That Support Flexible Behavior Based on Rules and Long-Term Knowledge. Journal of Neuroscience, 44(22).</p>
-		        <p>[4]. Zhang, G., Xu, Y., [Wang, X]., Li, J., Shi, W., Bi, Y., & Lin, N. (2023). A social-semantic working-memory account for two canonical language areas. Nature Human Behaviour, 7(11), 1980-1997..</p>
-                <p>[5]. Wang, X., Gao, Z., Smallwood, J., Jefferies, E. (2021). Both default mode and multiple-demand regions represent goal information. Journal of Neuroscience. 41 (16), 3679-3691.</p>
-                <p>[6]. Jefferies, E., Wang, X. (2021). Semantic cognition: semantic memory and semantic control. Oxford research encyclopedia of psychology.</p>
-                <p>[7]. Wang, X., Margulies, D., Smallwood, J., Jefferies, E. (2020), A gradient from long-term memory to novel cognition: transitions through default mode to executive cortex. Neuroimage, 220, 117074</p>
-                <p>[8]. Wang, X., Bernhardt, B. C., Karapanagiotidis, T., De Caso, I., Alam, T. R. D. J. G., Cotter, Z., ... & Jefferies, E. (2018). The structural basis of semantic control: Evidence from individual differences in cortical thickness. NeuroImage, 181, 480-489.</p>
-            </div>
-            <div class="tab-pane fade" id="auditory-processing">
-                <h3>Auditory processing in animal models:</h3>
-                <p>[1]. Du, Y., Wang, Q., Zhang, Y., Wu, X.H., Li, L.* (2012). Perceived target-masker separation unmasks responses of lateral amygdala to the emotionally conditioned target sounds in awake rats. Neuroscience, 225, 249-257.</p>
-                <p>[2]. Du, Y., Wu, X.H., Li, L.* (2011). Differentially organized top-down modulation of prepulse inhibition of startle. Journal of Neuroscience, 31, 13644-13653.</p>
-                <p>[3]. Du, Y., Kong, L.Z., Wang, Q., Wu, X.H., Li, L.* (2011). Auditory frequency-following response: A neurophysiological measure for studying the “cocktail-party problem”. Neuroscience and Biobehavioral Reviews, 35, 2046-2057.</p>
-                <p>[4]. Du, Y., Wu, X.H., Li, L.* (2010). Emotional learning enhances stimulus-specific top-down modulation of sensorimotor gating in socially reared rats but not isolation-reared rats. Behavioural Brain Research, 206, 192-201.</p>
-                <p>[5]. Li, L.*, Du, Y., Li, N.X., Wu, X.H., Wu, Y.H. (2009). Top-down modulation of prepulse inhibition of the startle reflex in humans and rats. Neuroscience and Biobehavioral Reviews, 33, 1157-1167.</p>
-                <p>[6]. Du, Y., Li, J.Y., Wu, X.H., Li, L.* (2009). Precedence effect-induced enhancement of prepulse inhibition in socially reared but not isolation-reared rats. Cognitive, Affective, and Behavioral Neuroscience, 9, 44-58.</p>
-                <p>[7]. Du, Y., Ma, T.F., Wang, Q., Wu, X.H., Li, L.* (2009). Two crossed axonal projections contribute to binaural unmasking of frequency-following responses in rat inferior colliculus. European Journal of Neuroscience, 30, 1779-1789.</p>
-                <p>[8]. Du, Y., Huang, Q., Wu, X.H., Galbraith, G.C., Li, L.* (2009). Binaural unmasking of frequency-following responses in rat amygdala. Journal of Neurophysiology, 101, 1647-1659.</p>
-                <p>[9]. Ping, J.L., Li, N.X., Du, Y., Wu, X.H., Li, L., Galbraith, G. (2007). Auditory evoked responses in the rat: transverse subdermal electrodes register before cochlear nucleus and do not reflect later inferior colliculus activity. Journal of Neuroscience Methods, 161, 11-16.</p>
-            </div>
+            </a>
         </div>
     </div>
 </section>
 
-<section id="contactUs" class="page-section">
-    <div class="container">
-        <div class="row">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>Contact Us</h2>
-                <p>Please contact us for applying Phd program or Post Doc program</p>
-            </div>
-        </div>
-        <div class="row mrgn30">
-            <div class="col-sm-4">
-                <h4>Address:</h4>
-                <address>
-                    LASM Lab<br>
-                    Institute of Psychology, Chinese Academy of Sciences<br>
-                    Beijing, China <br>
-                </address>
-                <h4>Phone:</h4>
-                <address>
-                    XXXXXXXXXXXXX <br>
-                </address>
-                <h4>Email:</h4>
-                <address>
-                    <a href="mailto:duyi@psych.ac.cn">duyi@psych.ac.cn</a>
-                </address>
-            </div>
-            <form method="post" action="" id="contactfrm" role="form">
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="form-group">
-                        <label for="comments">Comments</label>
-                        <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-                    </div>
-                    <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit"> Submit</button>
-                    <div class="result"></div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!--/.container-->
-</section>
-
-<section class="maps">
-    <iframe src="https://map.baidu.com/search/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E5%BF%83%E7%90%86%E7%A0%94%E7%A9%B6%E6%89%80/@12955818.1359792,4839931.3398256,19z?querytype=s&da_src=shareurl&wd=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2%E5%BF%83%E7%90%86%E7%A0%94%E7%A9%B6%E6%89%80&c=1&src=0&pn=0&sug=0&l=7&b=(11421828.843030117,4763109.309976366;14186900.10950008,6127920.127400643)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" width="100%" height="250" frameborder="0"></iframe>
-</section>
 <footer class="page-section">
     <div class="container">
         <div class="row">
@@ -690,7 +268,7 @@
     </div>
 </section>
 <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
-
+</main>
 <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
 <script src="js/modernizr-latest.js"></script>
 <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
