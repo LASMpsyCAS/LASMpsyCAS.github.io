@@ -50,36 +50,71 @@ var customScripts = {
         $(".fancybox").fancybox();
     },
     onePageNav: function () {
+        if ($('#mainNav').length) {
+            $('#mainNav').onePageNav({
+                currentClass: 'active',
+                changeHash: false,
+                scrollSpeed: 950,
+                scrollThreshold: 0.2,
+                filter: '',
+                easing: 'swing',
+                begin: function () {
+                    //I get fired when the animation is starting
+                },
+                end: function () {
+                    //I get fired when the animation is ending
+                },
+                scrollChange: function ($currentListItem) {
+                    //I get fired when you enter a section and I pass the list item of the section
+                }
+            });
+        }
+    },
+    slider: function () {
+        if ($('#da-slider').length) {
+            $('#da-slider').cslider({
+                autoplay: true,
+                bgincrement: 0
+            });
+        }
+    },
+    sidebar: function () {
+        var $body = $('body');
+        var $toggle = $('.sidebar-toggle');
 
-        $('#mainNav').onePageNav({        
-            currentClass: 'active',
-            changeHash: false,
-            scrollSpeed: 950,
-            scrollThreshold: 0.2,
-            filter: '',
-            easing: 'swing',
-            begin: function () {
-                //I get fired when the animation is starting
-            },
-            end: function () {
-                //I get fired when the animation is ending
-            },
-            scrollChange: function ($currentListItem) {
-                //I get fired when you enter a section and I pass the list item of the section
+        if (!$toggle.length) {
+            return;
+        }
+
+        $toggle.on('click', function () {
+            if ($(window).width() <= 991) {
+                $body.toggleClass('nav-open');
+                $toggle.attr('aria-expanded', $body.hasClass('nav-open'));
+            } else {
+                $body.toggleClass('nav-collapsed');
+                $toggle.attr('aria-expanded', !$body.hasClass('nav-collapsed'));
+            }
+        });
+
+        $('.sidebar-scrim, .side-nav a').on('click', function () {
+            if ($(window).width() <= 991) {
+                $body.removeClass('nav-open');
+                $toggle.attr('aria-expanded', 'false');
+            }
+        });
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 991) {
+                $body.removeClass('nav-open');
             }
         });
     },
-    slider: function () {
-        $('#da-slider').cslider({
-            autoplay: true,
-            bgincrement: 0
-        });
-    }, 
 	init: function () {
+        customScripts.sidebar();
         customScripts.onePageNav();
         customScripts.profile();
         customScripts.fancybox();
-        customScripts.slider(); 
+        customScripts.slider();
     }
 }
 $('document').ready(function () {
