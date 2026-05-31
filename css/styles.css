@@ -2054,9 +2054,54 @@ body.nav-collapsed .sidebar-toggle {
     color: #013CA0;
 }
 
+
+/* Keep the home-page quick links as one horizontal row per destination. */
+.quick-links-section .subpage-directory {
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.quick-links-section .subpage-row {
+    display: grid;
+    grid-template-columns: minmax(260px, 36%) 1fr;
+    min-height: 250px;
+    border-radius: 28px;
+}
+
+.quick-links-section .subpage-visual {
+    min-height: 250px;
+}
+
+.quick-links-section .subpage-copy {
+    justify-content: center;
+    padding: 34px 42px;
+}
+
+@media (max-width: 991px) {
+    .quick-links-section .subpage-row {
+        grid-template-columns: minmax(220px, 34%) 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .quick-links-section .subpage-row {
+        grid-template-columns: minmax(140px, 38%) 1fr;
+        min-height: 0;
+    }
+
+    .quick-links-section .subpage-visual,
+    .quick-links-section .pi-visual img {
+        min-height: 210px;
+    }
+
+    .quick-links-section .subpage-copy {
+        padding: 24px 22px;
+    }
+}
+
 @media (max-width: 1199px) {
-    .subpage-directory {
-        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    .quick-links-section .subpage-directory {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -2107,7 +2152,7 @@ body.nav-collapsed .sidebar-toggle {
 }
 
 @media (max-width: 767px) {
-    .subpage-directory {
+    .quick-links-section .subpage-directory {
         grid-template-columns: 1fr;
     }
 
